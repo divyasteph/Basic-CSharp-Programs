@@ -62,3 +62,40 @@ using System;
            Console.Write("Number is not Palindrome");     
     }  
   }  
+
+  //Factorial
+  using System;  
+  public class FactorialExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int i,fact=1,number;      
+       Console.Write("Enter any Number: ");      
+       number= int.Parse(Console.ReadLine());     
+       for(i=1;i<=number;i++){      
+        fact=fact*i;      
+       }      
+       Console.Write("Factorial of " +number+" is: "+fact);    
+     }  
+  }
+  //String Reverse
+  using System;  
+  public class StringReverse  
+   {  
+     public static void Main(string[] args)  
+    {  
+         string Input= "Divya";
+         // Converting string to character array
+        char[] charArray = Input.ToCharArray(); 
+        // Declaring an empty string
+        string reversedString = String.Empty; 
+        // Iterating the each character from right to left
+        for(int i = charArray.Length - 1; i > -1; i--) 
+        { 
+            // Append each character to the reversedstring.
+            reversedString += charArray[i]; 
+        }
+        Console.WriteLine(reversedString);
+     
+    }  
+  }    
